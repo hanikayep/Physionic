@@ -423,6 +423,10 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -531,15 +535,15 @@ body {
   }
 }
 
-@media (min-width: 728px) {
+@media (min-width: 768px) {
   .container {
-    max-width: 728px;
+    max-width: 768px;
   }
 }
 
-@media (min-width: 984px) {
+@media (min-width: 900px) {
   .container {
-    max-width: 984px;
+    max-width: 900px;
   }
 }
 
@@ -628,12 +632,12 @@ body {
   margin-top: 0.5rem;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
 .mt-20 {
   margin-top: 5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .block {
@@ -1066,6 +1070,20 @@ body {
   transition-duration: 500ms;
 }
 
+@media (min-width: 768px) {
+  .container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 header .toggleMenu span{
   height: 0.2rem;
   width: 2rem;
@@ -1088,6 +1106,11 @@ header .toggleMenu span:nth-child(3){
 }
 
 @media (min-width: 768px) {
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .md\:mx-20 {
     margin-left: 5rem;
     margin-right: 5rem;
@@ -1117,6 +1140,10 @@ header .toggleMenu span:nth-child(3){
     display: none;
   }
 
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -1140,14 +1167,14 @@ header .toggleMenu span:nth-child(3){
 }
 
 @media (min-width: 1024px) {
-  .lg\:my-20 {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-  }
-
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .lg\:my-20 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 
   .lg\:mb-0 {
@@ -1156,14 +1183,6 @@ header .toggleMenu span:nth-child(3){
 
   .lg\:ml-\[20\%\] {
     margin-left: 20%;
-  }
-
-  .lg\:ml-0 {
-    margin-left: 0px;
-  }
-
-  .lg\:mr-0 {
-    margin-right: 0px;
   }
 
   .lg\:block {
@@ -1186,24 +1205,12 @@ header .toggleMenu span:nth-child(3){
     width: 80%;
   }
 
-  .lg\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .lg\:items-center {
-    align-items: center;
-  }
-
   .lg\:gap-5 {
     gap: 1.25rem;
-  }
-
-  .lg\:text-left {
-    text-align: left;
   }
 }
 

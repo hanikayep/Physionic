@@ -6,7 +6,15 @@
     body{
         @apply font-montserrat;
     }
+    html{
+        @apply overflow-x-hidden
+    }
 }
+
+.container{
+    @apply md:mx-20 lg:mx-auto
+}
+
 
 header .toggleMenu span{
     height: 0.2rem;
