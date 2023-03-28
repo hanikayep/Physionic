@@ -29,6 +29,7 @@ module.exports = {
           xl: '1240px',
         //  '2xl': '1496px',
         },
+
       }
 
     },
