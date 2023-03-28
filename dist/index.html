@@ -53,42 +53,46 @@
         </div>
     </header>
 
-    <section class="banner bg-cover bg-blend-multiply bg-darkGray bg-left-top bg-no-repeat bg-[url('./img/hero-cover.jpg')] py-10 text-center text-white ">
+    <section class="banner pt-20 pb-10 bg-cover bg-blend-multiply bg-darkGray bg-left-top bg-no-repeat bg-[url('./img/hero-cover.jpg')] py-10 text-center text-white ">
         <div class="container">
             
-        <div class="bannerWrapper md:flex">
-            <div>
+        <div class="bannerWrapper md:flex md:items-center">
+            <div class="md:text-left">
                 <h1 class="text-huge font-semibold mb-6 ">Meet the Best Hospital</h1>
-                <p class="mb-6 w-[70%] mx-auto">We know how large objects will act, 
+                <p class="mb-6 w-[70%] mx-auto md:ml-0">We know how large objects will act, 
                     but things on a small scale.</p>
                 <a href="" class="inline-block bg-primary px-5 py-3 rounded-full font-semibold mb-6 ">Get a Quote Now</a><br>
                 <a href="" class="inline-block bg-transparent border-[1px] border-white px-5 py-3 rounded-full font-semibold">Learn More</a>
             </div>
-            <div class="bannerForm text-left text-black bg-white p-10 rounded-lg w-[350px] mx-auto my-10">
+            <div class="bannerForm text-left text-black bg-white p-10 rounded-lg w-[350px] mx-auto my-10 md:mr-0">
                 <h3 class="text-center">Book Appointment</h3>
                 <form action="">
 
-                    <div class="inputGroup mb-3">
-                        <label for="">Name</label>
-                        <input class="p-1 w-full" type="text" placeholder="Full Name">
+                    <div class="inputGroup my-5">
+                        <label for="">Name *</label>
+                        <input class="mt-2 py-3 pl-5 w-full bg-lightGray border-[1px] border-[#e1e1e1] rounded-lg text-darkGray font-medium" type="text" placeholder="Full Name" required>
                     </div>
 
-                    <div class="inputGroup mb-3">
-                        <label for="">Email</label>
-                        <input class="p-1 w-full" type="email" placeholder="Email">
+                    <div class="inputGroup my-5">
+                        <label for="">Email address *</label>
+                        <input class="mt-2 py-3 pl-5 w-full bg-lightGray border-[1px] border-[#e1e1e1] rounded-lg text-darkGray font-medium" type="email" placeholder="Email" required>
                     </div>
 
-                    <div class="inputGroup mb-3">
+                    <div class="inputGroup my-5">
                         <label for="">Department *</label>
-                        <select class="p-1 w-full" name="" id="">
-                            <option value="">Please Select</option>
+                        <select class="mt-2 py-3 p-5 w-full bg-lightGray border-[1px] border-[#e1e1e1] rounded-lg text-darkGray font-medium" name="" id="" required>
+                            <option value="" hidden>Please Select</option>
+                            <option value="">Department 1</option>
+                            <option value="">Department 2</option>
                         </select>
                     </div>
 
-                    <div class="inputGroup mb-3">
+                    <div class="inputGroup my-5">
                         <label for="">Time *</label>
-                        <select class="p-1 w-full" name="" id="">
-                            <option value="">4:00 Available</option>
+                        <select class="mt-2 py-3 p-5 w-full bg-lightGray border-[1px] border-[#e1e1e1] rounded-lg text-darkGray font-medium" name="" id=""  required>
+                            <option value="" hidden>4:00 Available</option>
+                            <option value="">6:00 Available</option>
+                            <option value="">8:00 Available</option>
                         </select>
                     </div>
 
@@ -107,7 +111,7 @@
                 <p class="mb-6 w-[70%] mx-auto text-center text-darkGray">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
             </div>
 
-            <div class="mx-5 md:grid md:grid-cols-3 my-10 gap-10">
+            <div class="mx-5 md:grid md:grid-cols-3 my-20 gap-10">
                 <div class=" bg-[#D9EDFF] rounded-lg mb-10 md:mb-0">
                     <div class="py-10 flex justify-center gap-2 items-center">
                         <div class="md:hidden">
@@ -119,7 +123,7 @@
                         <h3 class="font-bold text-lg">Emergency Case</h3>
                     </div>
                     <div class="p-10 bg-white border-[1px] border-[#D9EDFF] rounded-lg">
-                            <p class="text-darkGray font-semibold leading-8">-  The best products start with Figma <br>
+                            <p class="text-darkGray font-semibold leading-8 mb-2">-  The best products start with Figma <br>
                             - Design with real data <br>
                             - Lightning fast prototyping <br>
                             - Fastest way to organize <br>
@@ -140,7 +144,7 @@
                         </h3>
                     </div>
                     <div class="p-10 bg-white border-[1px] border-[#D9EDFF] rounded-lg">
-                            <p class="text-darkGray font-semibold leading-8">-  The best products start with Figma <br>
+                            <p class="text-darkGray font-semibold leading-8 mb-2">-  The best products start with Figma <br>
                                 - Design with real data<br>
                                 - Lightning fast prototyping<br>
                                 - Fastest way to organize <br>
@@ -160,7 +164,7 @@
                         <h3 class="font-bold text-lg">Health Queries</h3>
                     </div>
                     <div class="p-10 bg-white border-[1px] border-[#D9EDFF] rounded-lg">
-                            <p class="text-darkGray font-semibold leading-8">-  The best products start with Figma <br>
+                            <p class="text-darkGray font-semibold leading-8 mb-2">-  The best products start with Figma <br>
                                 - Design with real data<br>
                                 - Lightning fast prototyping<br>
                                 - Fastest way to organize <br>
@@ -179,7 +183,7 @@
                 <h1 class="text-huge font-semibold mb-6 text-center hidden md:block">Leading Medicine</h1>
                 <p class="mb-6 w-[70%] mx-auto text-center text-darkGray hidden md:block ">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics  </p>
 
-                <div class="mx-5 mt-20 md:grid md:grid-cols-3 gap-10">
+                <div class="mx-5 my-20 md:grid md:grid-cols-3 gap-10">
                     <div class="p-10 mb-10 bg-white border-2 border-[#e5e5e5] rounded-lg">
                         <div class="text-yellow-400">
                             <i class="fa-solid fa-star"></i>
@@ -234,7 +238,7 @@
                 <p class="mb-6 w-[70%] mx-auto text-center text-darkGray">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics  </p>
 
 
-                <div class="my-10 md:grid md:grid-cols-3 md:gap-10">
+                <div class="my-20 md:grid md:grid-cols-3 md:gap-10">
                     <div class="bg-white p-10 pl-20 relative rounded-lg mb-10">
                         <div class="faqs_show"><a><i class="fa-solid fa-chevron-right absolute left-8 text-[1.5rem] text-primary"></i></a></div>
                         <h3 class="font-bold text-lg">the quick fox jumps over 
@@ -334,7 +338,7 @@
                                 <li><i class="mb-5 fa-solid fa-circle-check mr-1 text-darkGray border-dartext-darkGray text-[1.5rem]"></i> Email and community support</li>
                             </ul>
                         </div>
-                        <a href="" class="block py-4 bg-primary text-center rounded-lg text-white font-semibold">Try for free</a>
+                        <a href="" clys5my-5="block py-4 bg-primary text-center rounded-lg text-white font-semibold">Try cla free</a>
                     </div>
                     
                     <div class="my-[-10] px-10 py-20 border-[1px] bg-secondary text-white mb-10 rounded-lg">
@@ -385,17 +389,17 @@
         </div>
     </section>
 
-    <section class="subscribe pt-20 pb-10 bg-secondary">
+    <section class="subscribe py-20 bg-secondary">
         <div class="container">
-            <div class="subscribeWrapper md:grid md:grid-cols-2 md:items-center md:gap-20">
+            <div class="subscribeWrapper md:grid md:grid-cols-2 md:items-center md:gap-40">
                 <h1 class="text-huge font-semibold mb-6 text-center text-white md:hidden">Subscribe For Latest Newsletter</h1>
                 <div class="text-left">
                     <h1 class="text-huge font-semibold mb-6 text-white hidden md:block">Get in Touch</h1>
-                    <p class="text-white my-3">The gradual accumulation of information about atomic and small-scale behaviour during the first quarter of the 20th </p>
+                    <p class="text-white my-3 hidden md:block">The gradual accumulation of information about atomic and small-scale behaviour during the first quarter of the 20th </p>
                 </div>
                 <form action="">
-                    <div class="grid grid-cols-5 px-5 text-sm text-lightGray ">
-                        <div class="col-span-3"><input class="p-3 w-full rounded-tl-md rounded-bl-md border-[1px] border-lightGray" type="email" placeholder="Email"></div>
+                    <div class="grid grid-cols-6 px-5 text-sm text-lightGray w-[90%] mx-auto md:w-[80%] md:ml-[20%] ">
+                        <div class="col-span-4"><input class="p-3 w-full rounded-tl-md rounded-bl-md border-[1px] border-lightGray" type="email" placeholder="Email"></div>
                         <div class="col-span-2"><input class="p-3 w-full bg-primary rounded-tr-md rounded-br-md border-[1px] border-lightGray" type="submit" value="Subscribe"></div>
                     </div>
                 </form>
@@ -406,16 +410,49 @@
     <footer class="footer">
         <div class="container">
             <div class="footerWrapper">
-                <div class="px-16 py-5">
-                    <h3 class="font-bold text-xl">Get in Touch</h3>
-                    <p class="text-darkGray my-3">the quick fox jumps over the lazy dog</p>
-                    <ul class="flex gap-3">
-                        <li><i class="text-primary fa-brands fa-facebook"></i></li>
-                        <li><i class="text-primary fa-brands fa-instagram"></i></li>
-                        <li><i class="text-primary fa-brands fa-twitter"></i></li>
-                    </ul>
+                <div class="py-20 px-24 md:px-0 md:grid md:grid-cols-4 md:gap-16">
+                    <div class="py-5">                        
+                        <h3 class="font-bold text-xl">Get in Touch</h3>
+                        <p class="text-darkGray font-medium my-5">the quick fox jumps over the lazy dog</p>
+                        <ul class="flex gap-3 pt-2">
+                            <li><a href=""><i class="text-primary text-[1.3rem] fa-brands fa-facebook"></i></a></li>
+                            <li><a href=""><i class="text-primary text-[1.3rem] fa-brands fa-instagram"></i></a></li>
+                            <li><a href=""><i class="text-primary text-[1.3rem] fa-brands fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="py-5">                        
+                        <h3 class="font-bold text-xl">Company info</h3>
+                        <ul class="pt-2">
+                            <li class="text-darkGray font-medium my-3"><a href="#">About Us</a></li>
+                            <li class="text-darkGray font-medium my-3"><a href="#">Carrier</a></li>
+                            <li class="text-darkGray font-medium my-3"><a href="#">We are hiring</a></li>
+                            <li class="text-darkGray font-medium mt-3"><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="py-5">                        
+                        <h3 class="font-bold text-xl">Features</h3>
+                        <ul class="pt-2">
+                            <li class="text-darkGray font-medium my-3"><a href="#">Business Marketing</a></li>
+                            <li class="text-darkGray font-medium my-3"><a href="#">User Analytic</a></li>
+                            <li class="text-darkGray font-medium my-3"><a href="#">Live Chat</a></li>
+                            <li class="text-darkGray font-medium mt-3"><a href="#">Unlimited Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="py-5">                        
+                        <h3 class="font-bold text-xl">Resources</h3>
+                        <ul class="pt-2">
+                            <li class="text-darkGray font-medium my-3"><a href="#">IOS & Android</a></li>
+                            <li class="text-darkGray font-medium my-3"><a href="#">Watch a Demo</a></li>
+                            <li class="text-darkGray font-medium my-3"><a href="#">Customers</a></li>
+                            <li class="text-darkGray font-medium mt-3"><a href="#">API</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+        </div>
+        
+        <div class="py-5 bg-lightGray">
+            <p class="w-[60%] mx-auto text-center text-darkGray font-semibold">Made With Love By <br class="md:hidden"> Figmaland. All Right Reserved </p>
         </div>
     </footer>
 
